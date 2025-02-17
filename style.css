@@ -1,0 +1,117 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    background: linear-gradient(135deg, #27ae60, #2ecc71); /* Green gradient (Dark Green to Light Green) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Light transparent background */
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for the container */
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+h1 {
+    font-size: 2rem;
+    color: black; /* White color for header */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input field styling */
+input[type="date"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    border: 2px solid #2ecc71; /* Green border */
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Focus effect on input field */
+input[type="date"]:focus {
+    border-color: #27ae60; /* Lighter green on focus */
+    outline: none;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.2rem;
+    background-color: #2ecc71; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #27ae60; /* Lighter green on hover */
+}
+
+/* Result text styling */
+.result {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50; /* Dark color for result text */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    input[type="date"], button {
+        font-size: 1rem;
+    }
+}
